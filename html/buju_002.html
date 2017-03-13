@@ -33,10 +33,12 @@
 				z-index:2;
 				width:50%;
 				height:100%;
-				margin:0px auto;/*main div居中*/
+				margin:0px auto;/*div居中*/
 				border:1px #F00 solid;
 			}
 			#top_right{
+				position:relative;
+				z-index:2;
 				width:25%;
 				height:100%;
 				float:right;
@@ -50,14 +52,58 @@
 				background-color:rgb(245,245,245);
 			}
 			#title_main{
-				margin:1.5% auto;/*main div居中*/
+				margin:1.5% auto;/*div居中*/
 				width:70%;
 				border:1px #F00 solid;
 			}
-			#f_main_title{
+			#title_adv{
+				width:100%;
+				height:100%;
+				border:1px #F00 solid;
+			}
+			#title_login{
+				margin:1.5% 10%;/*div居中*/
+				width:28%;
+				border:1px #F00 solid;
+			}
+			.f_main_title{
 				color:rgb(160,160,160);
 				font-size:15px;
 				font-weight: normal;
+			}
+			.f_login_title{
+				font-size:15px;
+				font-weight: bold;
+			}
+			
+			#center_left{
+				margin:0% 0% 0% 3%;
+				width:30%;
+				height:100%;
+				float:left;
+				background-color:rgb(255,0,0);
+			}
+			#center_center{
+				margin:0% 0% 0% 2%;
+				width:30%;
+				height:100%;
+				float:left;
+				background-color:rgb(0,255,0);
+			}
+			#center_right{
+				margin:0% 0% 0% 2%;
+				width:30%;
+				height:100%;
+				float:left;
+				background-color:rgb(0,0,255);
+			}
+			#bottom_adv{
+				width:100%;
+				height:100%;
+			}
+			.adv_img{
+				width:6%;
+				height:100%;
 			}
 		</style>
 	</head>
@@ -70,24 +116,45 @@
 				<div id="top_left">
 				</div>
 				<div id="top_right">
+					<table id="title_login">
+						<tr>
+							<th><font class="f_login_title" style="color:rgb(255,23,27);">你好</font></th>
+							<th><font class="f_main_title">|</font></th>
+							<th><font class="f_login_title">你好你好</font></th>
+						</tr>
+					</table>
 				</div>
 				<div id="top_center">
 					<table id="title_main">
 						<tr>
-							<th><font id="f_main_title">你好</font></th>
-							<th><font id="f_main_title">你好</font></th>
-							<th><font id="f_main_title">你好</font></th>
-							<th><font id="f_main_title">你好</font></th>
-							<th><font id="f_main_title">你好</font></th>
-							<th><font id="f_main_title">你好</font></th>
-							<th><font id="f_main_title">你好</font></th>
+							<th><font class="f_main_title">你好</font></th>
+							<th><font class="f_main_title">你好</font></th>
+							<th><font class="f_main_title">你好</font></th>
+							<th><font class="f_main_title">你好你好</font></th>
+							<th><font class="f_main_title">你好</font></th>
+							<th><font class="f_main_title">你好</font></th>
+							<th><font class="f_main_title">你好</font></th>
 						</tr>
 					</table>
 				</div>
 			</div>
 			<div id="center">
+				<div id="center_left">
+				</div>
+				<div id="center_center">
+				</div>
+				<div id="center_right">
+				</div>
 			</div>
 			<div id="bottom">
+				<!--direction:方向;behavior:滚动方式;scrollamount:滚动速度;scrolldelay:两次滚动之间的时间间隔;loop="-1":一直滚动-->
+				<marquee id="bottom_adv" direction="right" behavior="alternate" scrollamount="1" scrolldelay="0" loop="-1" onMouseOut="this.start()" onMouseOver="this.stop()">
+					<table id="title_adv">
+						<tr>
+							<th><img  src=""  alt="暂无图片" class="adv_img"/></th>
+						</tr>
+					</table>
+				</marquee>
 			</div>	
 		</div>
 	</body>
