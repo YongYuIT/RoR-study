@@ -25,27 +25,32 @@
 			
 		</script>
 		<style type="text/css">
+		    *{
+				margin:0;
+				padding:0;
+			}
 			#main{ 
 				width:100%; 
-				margin:0px auto;/*main div居中*/
+				height:100%;
 			}
 			#top{
 				position:relative;
 				width:100%;
 				height:20%;
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}
 			#center{
 				width:100%;
-				height:70%;
-				border:1px #F00 solid;
+				height:68%;
+				margin:0.1%;
+				/* border:1px #F00 solid; */
 			}
             #bottom{
 				width:100%;
 				height:10%;
 				white-space:nowrap;
 				overflow:hidden;
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}
 			#top_left{
 				position:relative;
@@ -53,7 +58,7 @@
 				width:25%;
 				height:100%;
 				float:left;
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}	
 			#top_center{
 			    position:relative;
@@ -61,7 +66,7 @@
 				width:50%;
 				height:100%;
 				margin:0px auto;/*div居中*/
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}
 			#top_right{
 				position:relative;
@@ -69,7 +74,7 @@
 				width:25%;
 				height:100%;
 				float:right;
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}
 			#top_title{
 				z-index:1;
@@ -79,19 +84,21 @@
 				background-color:rgb(245,245,245);
 			}
 			#title_main{
-				margin:1.5% auto;/*div居中*/
+				margin:0 auto;/*div居中*/
+				padding:1%;
 				width:70%;
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}
 			#title_adv{
 				width:100%;
 				height:100%;
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}
 			#title_login{
-				margin:1.5% 10%;/*div居中*/
+				margin:0 10%;
+				padding:2%;
 				width:28%;
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}
 			.f_main_title{
 				color:rgb(160,160,160);
@@ -104,25 +111,25 @@
 			}
 			
 			#center_left{
-				margin:0% 0% 0% 3%;
+				margin:0;
 				width:30%;
 				height:100%;
 				float:left;
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}
 			#center_center{
-				margin:0% 0% 0% 2%;
-				width:30%;
+				margin:0% 0% 0% 1%;
+				width:38%;
 				height:100%;
 				float:left;
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}
 			#center_right{
-				margin:0% 0% 0% 2%;
+				margin:0% 0% 0% 1%;
 				width:30%;
 				height:100%;
 				float:left;
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}
 			#bottom_adv{
 				width:100%;
@@ -139,12 +146,12 @@
 			#center_right_top{
 				height:70%;
 				width:100%;
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}
 			#center_right_bottom{
 				height:30%;
 				width:100%;
-				border:1px #F00 solid;
+				/* border:1px #F00 solid; */
 			}
 			#center_right_bottom_left{
 				float:left;
@@ -159,60 +166,60 @@
 		</style>
 	</head>
 
-	<body>
+	<body style="margin:0;">
 		<div id="main">
 			<div id="top">
 				<div id="top_title">
 				</div>
 				<div id="top_left">
-					<img  src="./img/no_img.jpg"  alt="暂无图片" class="center_img"/>
+					<img  src="./img/img_000.jpg"  alt="暂无图片" class="center_img"/>
 				</div>
 				<div id="top_right">
 					<table id="title_login">
 						<tr>
-							<th><font class="f_login_title" style="color:rgb(255,23,27);">你好</font></th>
+							<th><font class="f_login_title" style="color:rgb(255,23,27);">登录</font></th>
 							<th><font class="f_main_title">|</font></th>
-							<th><font class="f_login_title">你好你好</font></th>
+							<th><font class="f_login_title">免费注册</font></th>
 						</tr>
 					</table>
 				</div>
 				<div id="top_center">
 					<table id="title_main">
 						<tr>
-							<th><font class="f_main_title">你好</font></th>
-							<th><font class="f_main_title">你好</font></th>
-							<th><font class="f_main_title">你好</font></th>
-							<th><font class="f_main_title">你好你好</font></th>
-							<th><font class="f_main_title">你好</font></th>
-							<th><font class="f_main_title">你好</font></th>
-							<th><font class="f_main_title">你好</font></th>
+							<th><font class="f_main_title">注册</font></th>
+							<th><font class="f_main_title">充值</font></th>
+							<th><font class="f_main_title">会员</font></th>
+							<th><font class="f_main_title">账号中心</font></th>
+							<th><font class="f_main_title">下载</font></th>
+							<th><font class="f_main_title">客服</font></th>
+							<th><font class="f_main_title">论坛</font></th>
 						</tr>
 					</table>
 				</div>
 			</div>
 			<div id="center">
 				<div id="center_left">
-					<img  src="./img/no_img.jpg"  alt="暂无图片" class="center_img"/>
+					<img  src="./img/img_001.jpg"  alt="暂无图片" class="center_img"/>
 				</div>
 				<div id="center_center">
-					<img  src="./img/no_img.jpg"  alt="暂无图片" class="center_img"/>
+					<img  src="./img/img_002.jpg"  alt="暂无图片" class="center_img"/>
 				</div>
 				<div id="center_right">
 					<div id="center_right_top">
 					</div>
 					<div id="center_right_bottom">
 						<div id="center_right_bottom_left">
-							<img  src="./img/no_img.jpg"  alt="暂无图片" class="center_img"/>
+							<img  src="./img/img_003.jpg"  alt="暂无图片" class="center_img"/>
 						</div>
 						<div id="center_right_bottom_right">
-							<p>文字信息文字信息文字信息文字信息文字信息文字信息</p>
+							<p style="padding:3%;">文字信息文字信息文字信息文字信息文字信息文字信息</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="bottom" onMouseOver="clearInterval(adv_id)" onMouseOut="do_scroll()">
-				<img  src="./img/no_img.jpg"  alt="暂无图片" class="adv_img"/>
-				<img  src="./img/no_img.jpg"  alt="暂无图片" class="adv_img"/>
+				<img  src="./img/img_004.jpg"  alt="暂无图片" class="adv_img"/>
+				<img  src="./img/img_005.jpg"  alt="暂无图片" class="adv_img"/>
 			</div>	
 		</div>
 	</body>
