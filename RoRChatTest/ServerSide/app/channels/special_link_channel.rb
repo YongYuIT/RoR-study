@@ -1,14 +1,15 @@
 $users=[]
 class SpecialLinkChannel < ApplicationCable::Channel
   def subscribed
-    logger.info "yuyong---->subscribed-->"+params.to_s
+    logger.info "yuyong---->subscribed-->"+params.to_s+"-->"+$users.to_s
     @userID = Time.new.to_i.to_s
     stream_for @userID
     $users.push(@userID)
   end
 
   def unsubscribed
-
+    $users=$users-[@userID]
+    logger.info "yuyong---->unsubscribed"+"-->"+$users.to_s
   end
 
   def s_say_hello(msg_from_client)
