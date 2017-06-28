@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @staff.name %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @staff.username %>
+</p>
+
+<p>
+  <strong>Password md5:</strong>
+  <%= @staff.password_md5 %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @staff.position %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @staff.email %>
+</p>
+
+<%= link_to 'Edit', edit_staff_path(@staff) %> |
+<%= link_to 'Back', staffs_path %>
