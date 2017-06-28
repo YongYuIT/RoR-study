@@ -1,0 +1,42 @@
+<p id="notice">
+	<%= notice %>
+</p>
+
+<p>
+	<strong>Staff:</strong>
+	<%= @leave_record.staff_id %>
+</p>
+
+<p>
+	<strong>From date:</strong>
+	<%= @leave_record.from_date %>
+</p>
+
+<p>
+	<strong>To date:</strong>
+	<%= @leave_record.to_date %>
+</p>
+
+<p>
+	<strong>Apply date:</strong>
+	<%= @leave_record.apply_date %>
+</p>
+
+<p>
+	<strong>Reason:</strong>
+	<%= @leave_record.reason %>
+</p>
+
+<p>
+	<strong>Leave type:</strong>
+	<%= @leave_record.leave_type %>
+</p>
+
+<p>
+	<strong>State:</strong>
+	<%= @leave_record.state %>
+</p>
+
+<%= link_to 'Edit', edit_leave_record_path(@leave_record) %> |
+<%= link_to 'Back', leave_records_path %> |
+<%= link_to 'Excel', {:controller => "leave_records",:action => 'excel',:recoed=> @leave_record},{}%>
