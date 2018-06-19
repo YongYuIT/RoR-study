@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  staff_id: MyString
+  from_date: 2017-02-02 23:19:33
+  to_date: 2017-02-02 23:19:33
+  apply_date: 2017-02-02 23:19:33
+  reason: MyString
+  leave_type: MyString
+  state: MyString
+
+two:
+  staff_id: MyString
+  from_date: 2017-02-02 23:19:33
+  to_date: 2017-02-02 23:19:33
+  apply_date: 2017-02-02 23:19:33
+  reason: MyString
+  leave_type: MyString
+  state: MyString
