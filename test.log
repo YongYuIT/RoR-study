@@ -1,0 +1,23 @@
+$ rails new hello_word
+$ cd hello_word/
+$ rails g controller hello say_hello
+$ gedit app/controllers/hello_controller.rb
+...
+$ rails server -b 0.0.0.0 -p 3000 -e development
+
+http://192.168.0.37:3000/hello/say_hello
+当前进程号:25096
+当前线程号:32655440
+开始时间:2018-06-19 03:27:09 -0700
+结束时间:2018-06-19 03:27:19 -0700
+
+$ ps aux | grep 24790
+yong      24790  2.1  0.9 1141952 73888 ?       Sl   03:16   0:01 puma 3.11.4 (tcp://0.0.0.0:3000) [hello_word]
+yong      24917  0.0  0.0  21296  1028 pts/2    S+   03:17   0:00 grep --color=auto 24790
+
+$ gedit config/puma.rb
+#threads_count = ENV.fetch("RAILS_MAX_THREADS") {5}
+threads_count = ENV.fetch("RAILS_MAX_THREADS") {1}
+
+#workers ENV.fetch("WEB_CONCURRENCY") {2}
+workers ENV.fetch("WEB_CONCURRENCY") {2}
